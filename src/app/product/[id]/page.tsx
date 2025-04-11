@@ -4,8 +4,17 @@ import { Star } from 'lucide-react';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import styles from './page.module.css';
+import { useParams } from 'next/navigation';
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+declare module 'react' {
+  interface CSSProperties {
+    '--zoom-x'?: string;
+    '--zoom-y'?: string;
+  }
+}
+
+export default function ProductPage() {
+  const params = useParams<{ id: string }>();
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedSize, setSelectedSize] = useState('M');
   const [quantity, setQuantity] = useState(1);
@@ -73,7 +82,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     }
     
     setValidationError('');
-    // Your cart logic here
     setShowCartAlert(true);
     setTimeout(() => setShowCartAlert(false), 2000);
   };
@@ -111,9 +119,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
               <div 
                 className={styles.zoomOverlay}
                 style={{
-                  left: `${zoomPosition.x}%`,
-                  top: `${zoomPosition.y}%`,
-                  transform: 'translate(-50%, -50%)'
+                  '--zoom-x': `${zoomPosition.x}%`,
+                  '--zoom-y': `${zoomPosition.y}%`
                 }}
               />
             )}

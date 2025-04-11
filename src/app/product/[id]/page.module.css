@@ -8,6 +8,9 @@
   transition: all 0.2s ease;
   z-index: 10;
   background: rgba(0,0,0,0.1);
+  left: var(--zoom-x, 0);
+  top: var(--zoom-y, 0);
+  transform: translate(-50%, -50%);
 }
 
 .zoomOverlay::before {
