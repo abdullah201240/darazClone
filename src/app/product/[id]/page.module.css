@@ -1,16 +1,19 @@
 .zoomOverlay {
   position: absolute;
-  width: 33.333333%;
-  height: 33.333333%;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 0.375rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
   pointer-events: none;
-  transition: all 0.2s ease;
-  z-index: 10;
-  background: rgba(0,0,0,0.1);
-  left: var(--zoom-x, 0);
-  top: var(--zoom-y, 0);
-  transform: translate(-50%, -50%);
+  --zoom-x: 0;
+  --zoom-y: 0;
+  background-image: radial-gradient(
+    circle at var(--zoom-x) var(--zoom-y),
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 70%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
 }
 
 .zoomOverlay::before {
@@ -45,27 +48,9 @@
 .imageGallery {
   position: relative;
   width: 100%;
-  aspect-ratio: 1/1;
+  height: 400px;
   overflow: hidden;
   border-radius: 0.5rem;
-}
-
-/* Desktop hover zoom */
-@media (hover: hover) {
-  .imageGallery {
-    cursor: zoom-in;
-  }
-  
-  .imageGallery.zoomed {
-    cursor: zoom-out;
-  }
-}
-
-/* Mobile tap zoom */
-@media (hover: none) {
-  .imageGallery {
-    cursor: pointer;
-  }
 }
 
 .imageGallery img {
@@ -238,4 +223,32 @@
 
 .animate-bounce {
   animation: bounce 0.5s ease infinite;
+}
+
+.cartAlert {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #22c55e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  z-index: 50;
+}
+
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.text-red-500 {
+  color: #ef4444;
 }

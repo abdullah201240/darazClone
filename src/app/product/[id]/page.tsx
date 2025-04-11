@@ -116,13 +116,9 @@ export default function ProductPage() {
             />
             
             {isZoomed && !isMobile && (
-              <div 
-                className={styles.zoomOverlay}
-                style={{
-                  '--zoom-x': `${zoomPosition.x}%`,
-                  '--zoom-y': `${zoomPosition.y}%`
-                }}
-              />
+             <div 
+               className={styles.zoomOverlay}
+             />
             )}
           </div>
 
@@ -156,7 +152,7 @@ export default function ProductPage() {
                 <Star key={i} className={`h-5 w-5 ${i < Math.floor(product.rating) ? 'fill-current' : ''}`} />
               ))}
             </div>
-            <span className="text-gray-600">({product.reviews} reviews)</span>
+            <span className={styles.reviews}>{product.reviews} reviews</span>
           </div>
           
           <div className={styles.priceContainer}>
@@ -174,7 +170,7 @@ export default function ProductPage() {
           </div>
           
           <div className="mb-6">
-            <p className="text-gray-700">{product.description}</p>
+            <p className={styles.description}>{product.description}</p>
           </div>
           
           {/* Color Selection */}
@@ -232,7 +228,7 @@ export default function ProductPage() {
           </div>
           <div className="mb-6">
             {validationError && (
-              <div className="text-red-500 mb-2">{validationError}</div>
+              <div className={styles.validationError}>{validationError}</div>
             )}
             <button 
               className={`${styles.addToCart} ${!selectedColor || !selectedSize ? styles.disabled : ''}`}
@@ -259,7 +255,7 @@ export default function ProductPage() {
         </div>
       </div>
       {showCartAlert && (
-        <div className="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-md animate-bounce z-50">
+        <div className="cartAlert animate-bounce">
           Added to Cart!
         </div>
       )}
