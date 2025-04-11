@@ -1,0 +1,11 @@
+.progressBar {
+  height: 100%;
+  background-color: #f97316; /* orange-500 */
+  border-radius: 9999px;
+}
+
+/* We'll generate dynamic classes for each percentage */
+.progressBar_25 { width: 25%; }
+.progressBar_50 { width: 50%; }
+.progressBar_75 { width: 75%; }
+.progressBar_100 { width: 100%; }

@@ -8,7 +8,8 @@ export const products = [
     discount: 20,
     rating: 4.5,
     image: "https://picsum.photos/id/1080/300/300",
-    reviewCount: 100
+    reviewCount: 100,
+    category: "electronics",
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ export const products = [
     discount: 12,
     rating: 4.2,
     image: "https://picsum.photos/id/119/300/300",
-    reviewCount: 100
+    reviewCount: 100,
+    category: "electronics",
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ export const products = [
     discount: 18,
     rating: 4.3,
     image: "https://picsum.photos/id/160/300/300",
-    reviewCount: 100
+    reviewCount: 100,
+    category: "electronics",
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ export const products = [
     discount: 25,
     rating: 4.0,
     image: "https://picsum.photos/id/180/300/300",
-    reviewCount: 100
+    reviewCount: 100,
+    category: "electronics",
   },
   {
     id: 5,
@@ -48,7 +52,8 @@ export const products = [
     discount: 8,
     rating: 4.7,
     image: "https://picsum.photos/id/249/300/300",
-    reviewCount: 85
+    reviewCount: 85,
+    category: "electronics",
   },
   {
     id: 6,
@@ -58,7 +63,8 @@ export const products = [
     discount: 10,
     rating: 4.8,
     image: "https://picsum.photos/id/119/300/300",
-    reviewCount: 120
+    reviewCount: 120,
+    category: "electronics",
   },
   {
     id: 7,
@@ -68,7 +74,8 @@ export const products = [
     discount: 14,
     rating: 4.6,
     image: "https://picsum.photos/id/1080/300/300",
-    reviewCount: 95
+    reviewCount: 95,
+    category: "electronics",
   },
   {
     id: 8,
@@ -78,7 +85,8 @@ export const products = [
     discount: 9,
     rating: 4.4,
     image: "https://picsum.photos/id/160/300/300",
-    reviewCount: 150
+    reviewCount: 150,
+    category: "electronics",
   },
   {
     id: 9,
@@ -88,7 +96,8 @@ export const products = [
     discount: 11,
     rating: 4.2,
     image: "https://picsum.photos/id/180/300/300",
-    reviewCount: 75
+    reviewCount: 75,
+    category: "electronics",
   },
   {
     id: 10,
@@ -98,7 +107,8 @@ export const products = [
     discount: 16,
     rating: 4.3,
     image: "https://picsum.photos/id/249/300/300",
-    reviewCount: 60
+    reviewCount: 60,
+    category: "electronics",
   },
   {
     id: 11,
@@ -108,7 +118,8 @@ export const products = [
     discount: 8,
     rating: 4.7,
     image: "https://picsum.photos/id/119/300/300",
-    reviewCount: 55
+    reviewCount: 55,
+    category: "electronics",
   },
   {
     id: 12,
@@ -118,7 +129,8 @@ export const products = [
     discount: 13,
     rating: 4.5,
     image: "https://picsum.photos/id/1080/300/300",
-    reviewCount: 40
+    reviewCount: 40,
+    category: "electronics",
   },
   {
     id: 13,
@@ -128,7 +140,8 @@ export const products = [
     discount: 11,
     rating: 4.6,
     image: "https://picsum.photos/id/160/300/300",
-    reviewCount: 90
+    reviewCount: 90,
+    category: "electronics",
   },
   {
     id: 14,
@@ -138,7 +151,8 @@ export const products = [
     discount: 16,
     rating: 4.4,
     image: "https://picsum.photos/id/180/300/300",
-    reviewCount: 65
+    reviewCount: 65,
+    category: "electronics",
   },
   {
     id: 15,
@@ -148,7 +162,8 @@ export const products = [
     discount: 14,
     rating: 4.3,
     image: "https://picsum.photos/id/249/300/300",
-    reviewCount: 80
+    reviewCount: 80,
+    category: "electronics",
   },
   {
     id: 16,
@@ -158,7 +173,8 @@ export const products = [
     discount: 20,
     rating: 4.2,
     image: "https://picsum.photos/id/119/300/300",
-    reviewCount: 110
+    reviewCount: 110,
+    category: "electronics",
   },
   {
     id: 17,
@@ -168,7 +184,8 @@ export const products = [
     discount: 16,
     rating: 4.1,
     image: "https://picsum.photos/id/1080/300/300",
-    reviewCount: 45
+    reviewCount: 45,
+    category: "electronics",
   },
   {
     id: 18,
@@ -178,7 +195,8 @@ export const products = [
     discount: 14,
     rating: 4.3,
     image: "https://picsum.photos/id/160/300/300",
-    reviewCount: 70
+    reviewCount: 70,
+    category: "electronics",
   },
   {
     id: 19,
@@ -188,7 +206,8 @@ export const products = [
     discount: 13,
     rating: 4.5,
     image: "https://picsum.photos/id/180/300/300",
-    reviewCount: 50
+    reviewCount: 50,
+    category: "electronics",
   },
   {
     id: 20,
@@ -198,7 +217,8 @@ export const products = [
     discount: 10,
     rating: 4.0,
     image: "https://picsum.photos/id/249/300/300",
-    reviewCount: 35
+    reviewCount: 35 ,
+    category: "electronics",
   },
   {
     id: 21,
@@ -208,7 +228,8 @@ export const products = [
     discount: 12,
     rating: 4.2,
     image: "https://picsum.photos/id/119/300/300",
-    reviewCount: 25
+    reviewCount: 25,
+    category: "electronics",
   },
   {
     id: 22,
@@ -218,7 +239,8 @@ export const products = [
     discount: 23,
     rating: 4.1,
     image: "https://picsum.photos/id/1080/300/300",
-    reviewCount: 30
+    reviewCount: 30,
+    category: "electronics",
   },
   {
     id: 23,
@@ -228,7 +250,8 @@ export const products = [
     discount: 20,
     rating: 4.3,
     image: "https://picsum.photos/id/160/300/300",
-    reviewCount: 65
+    reviewCount: 65,
+    category: "electronics",
   },
   {
     id: 24,
@@ -238,6 +261,7 @@ export const products = [
     discount: 10,
     rating: 4.4,
     image: "https://picsum.photos/id/180/300/300",
-    reviewCount: 40
+    reviewCount: 40,
+    category: "electronics",
   }
 ];

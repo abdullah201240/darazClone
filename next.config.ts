@@ -12,6 +12,18 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'picsum.photos',
       },
+      {
+        protocol: 'https',
+        hostname: 'play.google.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'linkmaker.itunes.apple.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'developer.apple.com',
+      },
     ],
   },
 };

@@ -1,6 +1,4 @@
 'use client';
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import HeroBanner from "@/components/HeroBanner";
 import CategoryGrid from "@/components/CategoryGrid";
 import FlashSale from "@/components/FlashSale";
@@ -13,7 +11,6 @@ import JustForYou from '@/components/JustForYou';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <HeroBanner />
@@ -49,7 +46,6 @@ export default function Home() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

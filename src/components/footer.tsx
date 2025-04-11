@@ -140,22 +140,14 @@ export default function Footer() {
           <div className="flex gap-4">
             <Link href="#" className="block">
               <Image 
-                src="/google-play-badge.png" 
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
                 alt="Get it on Google Play" 
-                width={120}
+                width={135}
                 height={40}
                 className="h-auto"
               />
             </Link>
-            <Link href="#" className="block">
-              <Image 
-                src="/app-store-badge.png" 
-                alt="Download on the App Store" 
-                width={120}
-                height={40}
-                className="h-auto"
-              />
-            </Link>
+            
           </div>
         </div>
 
