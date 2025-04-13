@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'developer.apple.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'flowbite.com',
+      },
     ],
   },
 };
